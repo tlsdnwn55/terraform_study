@@ -9,8 +9,8 @@ resource "aws_lb_listener" "wjshin_albli" {
     }
 }
 
-resource "aws_lb_target_group_attachment" "wjshin_tgatt" {
-  target_group_arn = aws_lb_target_group.wjshin_albtg.arn
-  target_id = aws_instance.wjshin_ec2.id
-  port = 80
-}
+# resource "aws_lb_target_group_attachment" "wjshin_tgatt" {
+#   target_group_arn = aws_lb_target_group.wjshin_albtg.arn
+#   target_id = aws_instance.wjshin_ec2.id
+#   port = 80
+# }
